@@ -33,7 +33,7 @@ def about(request):
 
     return render(request, 'rango/about.html', context = context_dict)
 
-def register(request):
+""" def register(request):
     registered = False
 
     if request.method == 'POST':
@@ -90,7 +90,7 @@ def user_login(request):
 @login_required    
 def user_logout(request):
     logout(request)
-    return redirect(reverse('rango:index'))
+    return redirect(reverse('rango:index')) """
 
 def show_category(request, category_name_slug):
     context_dict = {}
